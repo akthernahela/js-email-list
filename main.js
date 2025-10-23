@@ -22,3 +22,4 @@ const urlEmail = "https://flynn.boolean.careers/exercises/api/random/mail";
 //Una variabile per richiamare il div con l'id
 const listaEmail = document.getElementById('emailList');
 
+//The keyword async before a function makes the function return a promise (JS ASYNC/AWAIT)
