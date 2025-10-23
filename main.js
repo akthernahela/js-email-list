@@ -25,3 +25,6 @@ const listaEmail = document.getElementById('emailList');
 const emailNum = 10;
 
 //The keyword async before a function makes the function return a promise (JS ASYNC/AWAIT)
+async function generateEmails() {
+    const emailArray = [];
+}
