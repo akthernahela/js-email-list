@@ -40,3 +40,6 @@ async function generateEmails() {
 
     listaEmail.innerHTML = `<ul>${listItems}</ul>`;
 }
+
+//Avvia la funzione
+generateEmails()
