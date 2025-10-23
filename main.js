@@ -26,5 +26,10 @@ const emailNum = 10;
 
 //The keyword async before a function makes the function return a promise (JS ASYNC/AWAIT)
 async function generateEmails() {
+    //Creo un array vuota 
     const emailArray = [];
+    //Uso il ciclo for per push 10 volte nell'array
+    for (let i = 0; i < emailNum; i++) {
+        emailArray.push(axios.get(urlEmail));
+    };
 }
