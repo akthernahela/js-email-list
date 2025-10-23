@@ -33,4 +33,6 @@ async function generateEmails() {
         emailArray.push(axios.get(urlEmail));
     };
     const responses = await Promise.all(emailArray);
+    //Uso map per estrarre email
+    const emails = responses.map(response => response.data.response);
 }
