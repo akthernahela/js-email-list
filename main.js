@@ -21,5 +21,7 @@ generare 10 indirizzi email e stamparli in pagina all'interno di una lista.
 const urlEmail = "https://flynn.boolean.careers/exercises/api/random/mail";
 //Una variabile per richiamare il div con l'id
 const listaEmail = document.getElementById('emailList');
+//Variabile per generare un tot numero di email
+const emailNum = 10;
 
 //The keyword async before a function makes the function return a promise (JS ASYNC/AWAIT)
