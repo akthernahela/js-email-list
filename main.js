@@ -37,4 +37,6 @@ async function generateEmails() {
     const emails = responses.map(response => response.data.response);
     //Costruisco lista HTML
     const listItems = emails.map(email => `<li>${email}</li>`).join('');
+
+    listaEmail.innerHTML = `<ul>${listItems}</ul>`;
 }
