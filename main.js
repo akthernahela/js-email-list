@@ -17,5 +17,6 @@ generare 10 indirizzi email e stamparli in pagina all'interno di una lista.
 }
 */
 
-
+//Faccio una variabile per includere url nel main.js
+//Una variabile per richiamare il div con l'id
 
