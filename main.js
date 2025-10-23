@@ -32,4 +32,5 @@ async function generateEmails() {
     for (let i = 0; i < emailNum; i++) {
         emailArray.push(axios.get(urlEmail));
     };
+    const responses = await Promise.all(emailArray);
 }
