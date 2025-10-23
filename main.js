@@ -17,6 +17,7 @@ generare 10 indirizzi email e stamparli in pagina all'interno di una lista.
 }
 */
 
-//Faccio una variabile per includere url nel main.js
+//Faccio una variabile per includere url nel main.js (faccio sotto forma di una variabile con la stringa)
+const urlEmail = "https://flynn.boolean.careers/exercises/api/random/mail"
 //Una variabile per richiamare il div con l'id
 
