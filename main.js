@@ -51,3 +51,8 @@ const emailNum = 10;
 const emails = [];
 // Contatore per tracciare le email generate
 let emailsCompletate = 0;
+//Faccio una funzione che include un ciclo for
+function generateEmailsClassic() {
+    // Faccio avvio subito tutte le 10 richieste
+    for (let i = 0; i < emailNum; i++) {}
+}
