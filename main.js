@@ -77,3 +77,6 @@ function displayEmails() {
     // Inserisco la lista nel DOM
     listaEmail.innerHTML = `<ul>${listItems}</ul>`;
 };
+
+//Avvio il processo di generazione delle email
+generateEmailsClassic();
