@@ -63,6 +63,10 @@ function generateEmailsClassic() {
             emails.push(response.data.response);
             // Incremento il contatore
             emailsCompletate++;
+            if (emailsCompletate === emailNum) {
+                // Se tutte sono arrivate, stampo la lista in pagina
+                displayEmails();
+            };
         }
     );
 }
