@@ -55,4 +55,6 @@ let emailsCompletate = 0;
 function generateEmailsClassic() {
     // Faccio avvio subito tutte le 10 richieste
     for (let i = 0; i < emailNum; i++) {}
+    // axios.get() avvia la richiesta e ritorna una Promise,
+    // ma usiamo .then() per gestirne il risultato in modo asincrono.
 }
