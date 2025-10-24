@@ -61,6 +61,8 @@ function generateEmailsClassic() {
         .then(function (response) {
             // Successo: aggiungo l'email all'array
             emails.push(response.data.response);
+            // Incremento il contatore
+            emailsCompletate++;
         }
     );
 }
