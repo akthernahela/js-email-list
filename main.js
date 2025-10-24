@@ -54,22 +54,23 @@ let emailsCompletate = 0;
 //Faccio una funzione che include un ciclo for
 function generateEmailsClassic() {
     // Faccio avvio subito tutte le 10 richieste
-    for (let i = 0; i < emailNum; i++) { }
-    // axios.get() avvia la richiesta e ritorna una Promise,
-    // ma usiamo .then() per gestirne il risultato in modo asincrono.
-    axios.get(urlEmail)
-        .then(function (response) {
-            // Successo: aggiungo l'email all'array
-            emails.push(response.data.response);
-            // Incremento il contatore
-            emailsCompletate++;
-            if (emailsCompletate === emailNum) {
-                // Se tutte sono arrivate, stampo la lista in pagina
-                displayEmails();
-            };
-        }
-    );
-}
+    for (let i = 0; i < emailNum; i++) {
+        // axios.get() avvia la richiesta e ritorna una Promise,
+        // ma usiamo .then() per gestirne il risultato in modo asincrono.
+        axios.get(urlEmail)
+            .then(function (response) {
+                // Successo: aggiungo l'email all'array
+                emails.push(response.data.response);
+                // Incremento il contatore
+                emailsCompletate++;
+                if (emailsCompletate === emailNum) {
+                    // Se tutte sono arrivate, stampo la lista in pagina
+                    displayEmails();
+                };
+            }
+            );
+    };
+};
 
 //Faccio una funzione per costruire e stampare la lista HTML
 function displayEmails() {
