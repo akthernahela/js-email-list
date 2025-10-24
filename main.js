@@ -17,15 +17,8 @@ generare 10 indirizzi email e stamparli in pagina all'interno di una lista.
 }
 */
 
-//Faccio una variabile per includere url nel main.js (faccio sotto forma di una variabile con la stringa)
-const urlEmail = "https://flynn.boolean.careers/exercises/api/random/mail";
-//Una variabile per richiamare il div con l'id
-const listaEmail = document.getElementById('emailList');
-//Variabile per generare un tot numero di email
-const emailNum = 10;
-
 //The keyword async before a function makes the function return a promise (JS ASYNC/AWAIT)
-async function generateEmails() {
+/*async function generateEmails() {
     //Creo un array vuota 
     const emailArray = [];
     //Uso il ciclo for per push 10 volte nell'array
@@ -43,3 +36,18 @@ async function generateEmails() {
 
 //Avvia la funzione
 generateEmails()
+*/
+
+
+
+//Dato che non si può svolgere l'esercizio come il metodo precedente, eseguo un codice differente 
+//Faccio una variabile per includere url nel main.js (faccio sotto forma di una variabile con la stringa)
+const urlEmail = "https://flynn.boolean.careers/exercises/api/random/mail";
+//Una variabile per richiamare il div con l'id
+const listaEmail = document.getElementById('emailList');
+//Variabile per generare un tot numero di email
+const emailNum = 10;
+// Array per le email
+const emails = [];
+// Contatore per tracciare le email generate
+let emailsCompletate = 0;
