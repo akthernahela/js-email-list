@@ -72,4 +72,6 @@ function generateEmailsClassic() {
 }
 
 //Faccio una funzione per costruire e stampare la lista HTML
-function displayEmails() {};
+function displayEmails() {
+    const listItems = emails.map(email => `<li>${email}</li>`).join('');
+};
